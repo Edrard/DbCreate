@@ -6,7 +6,8 @@ ini_set('display_errors', 1);
 
 require '../vendor/autoload.php';
 
-use edrard\DbCreate\DB;  
+use edrard\DbCreate\DB;
+use edrard\DbCreate\DBStatic;
 
 $config = array(
     'driver'    => 'mysql', // Db driver
@@ -18,8 +19,17 @@ $config = array(
     'collation' => 'utf8_unicode_ci', // Optional
     'prefix'    => '', // Table prefix, optional
 );
-$db = new DB($config); 
+$db = new DB($config);
 
+$query = $db->table('regular_china_AT-SPG')->where('id','>','2000000')->get();
+
+//dd($query);
+
+//-------------------------------------------------------------//
+//--------------Static------------------//
+
+DBStatic::initDb($config,'Dbname');
+$db = DBStatic::getDbConnection('Dbname');
 $query = $db->table('regular_china_AT-SPG')->where('id','>','2000000')->get();
 
 dd($query);
