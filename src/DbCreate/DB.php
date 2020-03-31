@@ -4,7 +4,6 @@ namespace edrard\DbCreate;
 use edrard\Log\MyLog;
 use Pixie\Connection;
 use Pixie\QueryBuilder\QueryBuilderHandler;
-use edrard\Atm\Exception\CriticalAtmException;
 
 class DB
 {
