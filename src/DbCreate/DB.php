@@ -12,7 +12,7 @@ class DB
 
     function __construct(array $config, $type = 'mysql'){
         MyLog::init();
-        MyLog::info("Init. DB type ".$type.' with name '.$name,array());
+        MyLog::info("Init. DB type ".$type.' with name '.$config['database'],array());
         $connection = new Connection($type, $config);
         try{
             $this->db_connect = new QueryBuilderHandler($connection);
