@@ -21,8 +21,7 @@
     "require": {
         "php": ">=7.0",
         "edrard/function": "dev-master",
-        "edrard/MyLog": "dev-master",
-        "usmanhalalit/pixie": "^2.0"
+        "edrard/MyLog": "dev-master"
     },
     "autoload": {
         "psr-4": {
