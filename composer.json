@@ -1,5 +1,5 @@
 {
-    "name": "edrard/DbCreate",
+    "name": "edrard/dbcreate",
     "description": "Pixie Wrapper",
     "type": "library",
     "homepage": "https://github.com/Edrard/DbCreate",
@@ -21,7 +21,7 @@
     "require": {
         "php": ">=7.0",
         "edrard/function": "dev-master",
-        "edrard/MyLog": "dev-master"
+        "edrard/mylog": "dev-master"
     },
     "autoload": {
         "psr-4": {
